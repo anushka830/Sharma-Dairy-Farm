@@ -1,0 +1,30 @@
+.why {
+    background: #f8fff5;
+}
+
+.feature-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card h1 {
+    font-size: 50px;
+}
+
+.feature-card h4 {
+    color: #198754;
+    margin: 15px 0;
+}
+
+.feature-card p {
+    color: #555;
+}

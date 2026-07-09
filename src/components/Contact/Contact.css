@@ -1,0 +1,42 @@
+.contact-section{
+    background:#f8fff5;
+}
+
+.contact-section h2{
+    color:#198754;
+    font-weight:bold;
+}
+
+.contact-info{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    height:100%;
+}
+
+.contact-info h4{
+    color:#198754;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    margin-bottom:15px;
+    font-size:17px;
+}
+
+form{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.form-control{
+    border-radius:10px;
+}
+
+.btn-success{
+    border-radius:10px;
+    padding:10px 25px;
+}
