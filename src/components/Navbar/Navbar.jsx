@@ -1,4 +1,6 @@
 import "./Navbar.css";
+import { useContext } from "react";
+import { CartContext } from "../../context/CartContext";
 import {
   FaHome,
   FaInfoCircle,
@@ -12,6 +14,7 @@ import {
 import { Link } from "react-router-dom";
 
 function Navbar() {
+  const { cart } = useContext(CartContext);
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow">
       <div className="container">
@@ -81,11 +84,17 @@ function Navbar() {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/cart">
-                <FaShoppingCart className="me-2" />
-                Cart
-              </Link>
-            </li>
+  <Link className="nav-link d-flex align-items-center" to="/cart">
+    <FaShoppingCart className="me-2" />
+    Cart
+
+    {cart.length > 0 && (
+      <span className="badge bg-danger ms-2">
+        {cart.reduce((total, item) => total + item.quantity, 0)}
+      </span>
+    )}
+  </Link>
+</li>
 
           </ul>
         </div>
