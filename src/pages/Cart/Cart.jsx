@@ -1,4 +1,5 @@
 import { useContext } from "react";
+import { Link } from "react-router-dom";
 import { CartContext } from "../../context/CartContext";
 
 function Cart() {
@@ -118,11 +119,12 @@ function Cart() {
 
             </h2>
 
-            <button className="btn btn-success float-end">
-
-              Checkout
-
-            </button>
+            <Link
+  to="/checkout"
+  className="btn btn-success float-end"
+>
+  Proceed to Checkout
+</Link>
 
           </>
 

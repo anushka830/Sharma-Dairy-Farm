@@ -1,0 +1,12 @@
+.card {
+  border: none;
+  border-radius: 15px;
+}
+
+.card h1 {
+  font-weight: bold;
+}
+
+.card p {
+  font-size: 18px;
+}

@@ -1,0 +1,21 @@
+.card{
+    border: none;
+    border-radius: 15px;
+}
+
+textarea{
+    resize: none;
+}
+
+.form-control,
+.form-select{
+    margin-bottom: 15px;
+}
+
+h2{
+    color:#198754;
+}
+
+button{
+    font-weight:bold;
+}
